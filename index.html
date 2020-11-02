@@ -1,20 +1,386 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Ejercicio Github</title>
-</head>
-<body>
-<nav >
-  <ul>
-    <li><a href="planning.html">Planning</a></li>
-     </ul>
-</nav>
-<p>
-Nombre: July Maribel Rodríguez Martínez</br>
-Programa:     Ingeneria de Sistemas</br>
-Fecha de creación:  6 de septiembre del 2020</br>
-Datos de contacto:  3213401204 
-</p>
+  <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scate=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Propiedades básica de CSS</title>
+  <style>
 
+    
+			body {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:700px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#005a83;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+        width: 100%;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#f0bd2c;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+      img {
+        width: 100%;
+        height: auto;
+      }
+  
+    table, th, td {
+      border: 1px solid black;
+    }
+     
+   </style>
+  <link rel="icon" type="image/png" href="img/css.png"/>              
+</head>
+<body >
+  <header>
+    <h1 style="color:#ee9601;">Propiedades básica de CSS</h1>
+  </header>
+  
+  <div id="header">
+    <ul class="nav">
+      <li><a href="">Inicio</a></li>
+      <li><a href="">Conceptos</a>
+        <ul>
+          <li><a href="#concept1">Propiedades de texto</a></li>
+          <li><a href="#concept2">Propiedades de lista</a></li>
+          <li><a href="#concept3">Propiedades de bordes</a></li>
+          <li><a href="#concept4">Propiedades de fuente</a></li>
+          
+        </ul>
+      </li>
+      <li><a href="">Acerca de</a>
+        <ul>
+          <li><a href="">Submenu1</a></li>
+          <li><a href="">Submenu2</a></li>
+          <li><a href="">Submenu3</a></li>
+          <li><a href="">Submenu4</a></li>
+        </ul>
+      </li>
+      <li><a href="">Recursos</a></li>
+      <li><a href="">Autoevaluación</a></li>
+      <li><a href="">Autor</a></li>
+    </ul>
+  </div>
+  <img src="img//Optimizacion720.jpg" alt="css" width="1333">
+  <section>
+    <article name="inicio" id="inicio">
+      <h2 style="color:#005a83;text-decoration:underline;">Inicio</h2>
+      <p>
+        En esta página web encontraras, información básica de las propiedades de CSS.
+        
+      </p>
+      <h3 style="color:#005a83;">Objetivo General</h3>
+        <p>Conocer las propiedades básicas de CSS</p>
+
+        <h3 style="color:#005a83;">Objetivo específico 1</h3>
+        <p>Aprender como ajustar CSS a la estructura de una página</p>
+
+        <h3 style="color:#005a83;"> Objetivo específico 2</h3>
+        <p>Entender que propiedades existen en CSS.</p>
+
+        <h3 style="color:#005a83;">Objetivo específico 3</h3>
+      <p>  Entender que valores existen en CSS</p>
+
+
+              
+    </article>
+  </section>
+  <hr>
+  <section>
+    <article name="concept" id="concept1">
+      <h2 style="color:#005a83;text-decoration:underline;">Conceptos</h2>
+      <h3 >Propiedades de texto</h3>
+      <table class='center'>
+        <tr>
+            <th>Propiedad</th>
+            <th>Descripcion</th>
+            <th>Valores</th>
+           
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">Color</th>
+          <th >Establece el color de un texto</th>
+          <th>RGB, hex, keyword</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">line-height</th>
+          <th >Establece la distancia entre líneas	normal</th>
+          <th>	normal, number, length, %</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">letter-spacing</th>
+          <th >Aumentar o disminuir el espacio entre caracteres.</th>
+          <th>normal, length</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">text-align</th>
+          <th >	Alinea el texto en un elemento</th>
+          <th>left, right, center, justify</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">text-decoration</th>
+          <th >	Agrega decoración al texto</th>
+          <th>none, underline, overline, line-through</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">text-indent</th>
+          <th >Agrega sangria a la primera linea de texto en un elemento</th>
+          <th>length, %</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">text-transform</th>
+          <th >Controla las letrast</th>
+          <th>none, capitalize, uppercase, lowercase</th>
+        </tr>
+      </table>
+      <p>
+        Para más información visite la página <a style="color:#005a83;text-decoration:underline;" href="http://www.w3schools.com/css/css_text.asp" title="CSS Text">w3schools.com CSS Text.</a>
+      </p>
+    </article>
+      <hr>
+      <article name="concept" id="concept2">
+      <h3 >Propiedades de lista</h3>
+      <table class='center'>
+        <tr>
+            <th>Propiedad</th>
+            <th>Descripcion</th>
+            <th>Valores</th>
+           
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">list-style</th>
+          <th >Establece todas las propiedades de una lista en una declaración</th>
+          <th>list-style-type, list-style-position, list-style-image, inherit</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">list-style-image</th>
+          <th >Especifica una imagen como marcador de elemento de lista.</th>
+          <th>URL, none, inherit</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">list-style-position</th>
+          <th >Especifica dónde colocar el marcador de elemento de lista</th>
+          <th>inside, outside, inherit</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">list-style-position</th>
+          <th >	Especifica el tipo de marcador de elemento de lista</th>
+          <th>none, disc, circle, square, decimal, decimal-leading-zero,
+            armenian, georgian, lower-alpha, upper-alpha, lower-greek,
+            lower-latin, upper-latin, lower-roman, upper-roman, inherit</th>
+        </tr>
+       
+      </table>
+      <p>
+        Para más información visite la página <a style="color:#005a83;text-decoration:underline;" href="https://www.w3schools.com/css/css_list.asp" title="CSS List">w3schools.com CSS List.</a>
+      </p>
+      </article>
+      <hr>
+      <article name="concept" id="concept3">
+      <h3 >Propiedades de bordes</h3>
+      <table class='center'>
+        <tr>
+            <th>Propiedad</th>
+            <th>Descripcion</th>
+            <th>Valores</th>
+           
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border</th>
+          <th >Establece todas las propiedades del borde en una declaración</th>
+          <th>border-width, border-style, border-color</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-bottom</th>
+          <th >Establece todas las propiedades del borde inferior en una declaración</th>
+          <th>border-bottom-width, border-bottom-style, border-bottom-color</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-bottom-color</th>
+          <th >Establece el color del borde inferior</th>
+          <th>border-color</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-bottom-style</th>
+          <th >	Establece el estilo del borde inferior</th>
+          <th>	border-style</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-bottom-width</th>
+          <th >Establece el ancho del borde inferior</th>
+          <th>border-width</th>
+        </tr>
+      
+          <th style="color:#ee9601;">border-color</th>
+          <th >Establece el color de los cuatro bordes.</th>
+          <th>color_name, hex_number, rgb_number, transparent, inherit</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-left</th>
+          <th >Establece todas las propiedades del borde izquierdo en una declaración</th>
+          <th>border-left-width, border-left-style, border-left-color</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-left-color</th>
+          <th >Establece el color del borde izquierdo</th>
+          <th>	border-color</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-left-style</th>
+          <th >Establece el estilo del borde izquierdo</th>
+          <th>border-style</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-left-width</th>
+          <th >Establece el ancho del borde izquierdo	</th>
+          <th>	border-width</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-right</th>
+          <th >Establece todas las propiedades del borde derecho en una declaración</th>
+          <th>border-right-width, border-right-style, border-right-color</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-right-color</th>
+          <th >	Establece el color del borde derecho</th>
+          <th>border-color</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-right-style</th>
+          <th> Establece el estilo del borde derecho</th>
+          <th>border-style</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-right-width</th>
+          <th >Establece el ancho del borde derecho</th>
+          <th>	border-width</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-style</th>
+          <th >Establece el estilo de los cuatro bordes.</th>
+          <th>none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, inherit</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-top</th>
+          <th >	Establece todas las propiedades del borde superior en una declaración</th>
+          <th>border-top-width, border-top-style, border-top-color</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-top-color</th>
+          <th >Establece el color del borde superior</th>
+          <th>border-color</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-top-style</th>
+          <th >Establece el ancho del borde superior</th>
+          <th>border-style</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">border-top-width</th>
+          <th >Establece el ancho del borde superior</th>
+          <th>	border-width</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">borders-width</th>
+          <th >Establece el ancho de los cuatro bordes.</th>
+          <th>	thin, medium, thick, length, inherit</th>
+        </tr>
+      
+       
+      </table>
+      <p>
+        Para más información visite la página <a style="color:#005a83;text-decoration:underline;" href="https://www.w3schools.com/css/css_border.asp" title="CSS Bordes">w3schools.com CSS Borders.</a>
+      </p>
+      </article>
+      <hr>
+      <article name="concept" id="concept4">
+      <h3 >Propiedades de fuente</h3>
+      <table class='center'>
+        <tr>
+            <th>Propiedad</th>
+            <th>Descripcion</th>
+            <th>Valores</th>
+           
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">font</th>
+          <th >Establece todas las propiedades de la fuente en una declaración</th>
+          <th>font-style, font-variant, font-weight, font-size/line-height, font-family, caption, icon, menu, message-box, small-caption, status-bar, inherit</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">font-family</th>
+          <th >Especifica la familia de fuentes para el texto.</th>
+          <th>family-name, generic-family, inherit</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">font-sizer</th>
+          <th >Especifica el tamaño de fuente del texto</th>
+          <th>xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, length, %, inherit</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">font-style</th>
+          <th >Especifica el estilo de fuente del texto.</th>
+          <th>normal, italic, oblique, inherit</th>
+        </tr>
+        <tr>
+          <th style="color:#ee9601;">font-variant</th>
+          <th >Especifica si un texto debe mostrarse en letra pequeña</th>
+          <th>normal, small-caps, inherit</th>
+        </tr>
+      
+          <th style="color:#ee9601;">font-weight</th>
+          <th >Especifica el peso de una fuente</th>
+          <th>	normal, bold, bolder, lighter,
+            100, 200, 300, 400, 500, 600, 700, 800, 900, inherit</th>
+        </tr>
+             
+       
+      </table>
+      <p>
+        Para más información visite la página <a style="color:#005a83;text-decoration:underline;" href="https://www.w3schools.com/css/css_font.asp" title="CSS Bordes">w3schools.com CSS Fuentes.</a>
+      </p>
+      <hr>
+
+    </article>
+  </section>
 </body>
 </html>
