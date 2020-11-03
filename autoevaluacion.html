@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scate=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Propiedades básica de CSS</title>
+  <style>
+
+    
+			body {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:700px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#005a83;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+        width: 100%;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#f0bd2c;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+      img {
+        width: 100%;
+        height: auto;
+      }
+  
+    table, th, td {
+      border: 1px solid black;
+    }
+     
+   </style>
+  <link rel="icon" type="image/png" href="img/css.png"/>              
+</head>
+<body >
+  <header>
+    <h1 style="color:#ee9601;">Propiedades básica de CSS</h1>
+  </header>
+  
+  <div id="header">
+    <ul class="nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#concept1">Conceptos</a>
+        <ul>
+          <li><a href="index.html#concept1">Propiedades de texto</a></li>
+          <li><a href="index.html#concept2">Propiedades de lista</a></li>
+          <li><a href="index.html#concept3">Propiedades de bordes</a></li>
+          <li><a href="index.html#concept4">Propiedades de fuente</a></li>
+          
+        </ul>
+      </li>
+      <li><a href="">Recursos</a>
+        <ul>
+          <li><a href="recurso1.html">Video1</a></li>
+          <li><a href="recurso2.html">Video2</a></li>
+        </ul>
+      </li>
+      <li><a href="">Autoevaluación</a>
+        <ul>
+          <li><a href="autoevaluacion.html">Proximamente</a></li>
+          <li><a href="autoevaluacion.html">Proximamente</a></li>
+        </ul></li>
+        <li><a href="autor.html">Autor</a></li>
+    </ul>
+  </div>
+  <img src="img//Optimizacion720.jpg" alt="css" width="1333">
+  <hr>
+  <section>
+   
+  </section>
+  <section style="max-height: 450px;width: 30%; overflow-y: scroll; ">	
+   
+    <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </section>
+ 
+
+</body>
+</html>
